@@ -15,6 +15,7 @@ BuildRequires:	autoconf2.5
 BuildRequires:	automake
 BuildRequires:	ortp-devel
 BuildRequires:	linphone-devel 
+BuildRequires:	libilbc-devel
 
 %description
 This package supplies the mediastreamer plugin for the iLBC audio
