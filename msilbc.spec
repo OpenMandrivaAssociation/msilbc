@@ -14,6 +14,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
 BuildRequires:	ortp-devel
+BuildRequires:	linphone-devel 
 
 %description
 This package supplies the mediastreamer plugin for the iLBC audio
