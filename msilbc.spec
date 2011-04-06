@@ -13,6 +13,7 @@ Source0:	http://download.savannah.gnu.org/releases/linphone/plugins/sources/%{na
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
+BuildRequires:	ortp-devel
 
 %description
 This package supplies the mediastreamer plugin for the iLBC audio
