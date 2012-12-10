@@ -5,12 +5,11 @@
 Summary:	msiLBC is low bitrate audio codec - plugin for mediastreamer
 Name:		msilbc
 Version:	2.0.3
-Release:	%mkrel 1
+Release:	2
 License:	GPL2
 Group:		System/Libraries
 URL:		http://www.linphone.org
 Source0:	http://download.savannah.gnu.org/releases/linphone/plugins/sources/%{name}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
 BuildRequires:	ortp-devel
@@ -36,7 +35,6 @@ iLBC is low bitrate audio codec - plugin for mediastreamer.
 Needed to build Google Talk libjingle voice call support with iLBC codec.
 
 %files -n %{libname}
-%defattr(-,root,root)
 %{_libdir}/mediastreamer/plugins/libmsilbc.so.%{major}*
 
 
@@ -54,10 +52,8 @@ iLBC is low bitrate audio codec - plugin for mediastreamer.
 Needed to build Google Talk libjingle voice call support with iLBC codec.
 
 %files -n %{develname}
-%defattr(-,root,root)
 %doc README INSTALL AUTHORS COPYING NEWS
 %{_libdir}/mediastreamer/plugins/libmsilbc.so
-%{_libdir}/mediastreamer/plugins/libmsilbc.la
 
 
 #--------------------------------------------------------------------
@@ -71,10 +67,15 @@ export ILBC_LIBS='%_libdir'
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
 
+
+%changelog
+* Wed Apr 06 2011 José Melo <mmodem@mandriva.org> 2.0.3-1mdv2011.0
++ Revision: 650838
+- Add missing buildrequire libilbc-devel
+- Add missing buildrequire linphone-devel
+- Add missing buildrequire ortp-devel
+- import msilbc
 
