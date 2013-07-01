@@ -2,7 +2,7 @@
 %define libname %mklibname %name %{major}
 %define develname %mklibname %name -d
 
-Summary:	msiLBC is low bitrate audio codec - plugin for mediastreamer
+Summary:	Is low bitrate audio codec - plugin for mediastreamer
 Name:		msilbc
 Version:	2.0.3
 Release:	2
