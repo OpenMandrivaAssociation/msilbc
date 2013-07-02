@@ -2,10 +2,10 @@
 %define libname %mklibname %name %{major}
 %define develname %mklibname %name -d
 
-Summary:	Is low bitrate audio codec - plugin for mediastreamer
+Summary:	Low bitrate audio codec - plugin for mediastreamer
 Name:		msilbc
 Version:	2.0.3
-Release:	2
+Release:	3
 License:	GPL2
 Group:		System/Libraries
 URL:		http://www.linphone.org
