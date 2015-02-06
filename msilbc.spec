@@ -5,7 +5,7 @@
 Summary:	Low bitrate audio codec - plugin for mediastreamer
 Name:		msilbc
 Version:	2.0.3
-Release:	3
+Release:	4
 License:	GPL2
 Group:		System/Libraries
 URL:		http://www.linphone.org
