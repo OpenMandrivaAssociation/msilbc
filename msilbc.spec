@@ -8,7 +8,7 @@ Version:	2.0.3
 Release:	4
 License:	GPL2
 Group:		System/Libraries
-URL:		http://www.linphone.org
+URL:		https://www.linphone.org
 Source0:	http://download.savannah.gnu.org/releases/linphone/plugins/sources/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf2.5
 BuildRequires:	automake
